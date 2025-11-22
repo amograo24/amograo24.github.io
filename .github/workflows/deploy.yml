@@ -90,10 +90,27 @@ jobs:
           value: ${{ github.repository }}
       - name: Install and Build 🔧
         run: |
-          sudo apt-get update && sudo apt-get install -y imagemagick
+          # install system deps for image processing and native gems
+          sudo apt-get update
+          sudo apt-get install -y imagemagick build-essential libxml2-dev libxslt1-dev zlib1g-dev
+
+          # python dependency
           pip3 install --upgrade nbconvert
+
+          # debug info
+          ruby --version
+          gem --version
+          bundle --version
+          bundle env || true  # for diagnostics only, don't fail if bundle env fails
+
           export JEKYLL_ENV=production
-          bundle exec jekyll build
+
+          # ensure gems are installed in CI before running jekyll
+          # explicit install needed despite bundler-cache to guarantee gems are present
+          bundle install --jobs 4 --retry 3
+
+          # build with trace for easier debugging on failure
+          bundle exec jekyll build --trace
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss

@@ -23,10 +23,52 @@ module ExternalPosts
     end
 
     def fetch_from_rss(site, src)
-      xml = HTTParty.get(src['rss_url']).body
-      return if xml.nil?
-      feed = Feedjira.parse(xml)
-      process_entries(site, src, feed.entries)
+      # fetch with a clear user-agent and a short timeout to avoid being blocked/hanging
+      begin
+        resp = HTTParty.get(src['rss_url'],
+                            headers: { 'User-Agent': 'GitHub Actions - jekyll (https://github.com)' },
+                            follow_redirects: true,
+                            timeout: 10)
+      rescue StandardError => e
+        puts "Warning: HTTP request failed for #{src['name']} (#{src['rss_url']}): #{e.class}: #{e.message}"
+        return
+      end
+
+      unless resp && resp.code == 200
+        puts "Warning: Failed to fetch RSS for #{src['name']} (#{src['rss_url']}): HTTP #{resp&.code}"
+        return
+      end
+
+      xml = resp.body
+      if xml.nil? || xml.strip.empty?
+        puts "Warning: Empty response for #{src['rss_url']}"
+        return
+      end
+
+      # quick sanity check — avoid passing HTML or other non-XML content to Feedjira
+      content_type = resp.headers['content-type'] || ''
+      unless xml.include?('<rss') || xml.include?('<feed') || xml.start_with?('<?xml') || content_type.include?('xml')
+        snippet = xml[0, 200].gsub(/
+   +/, '')
+        puts "Warning: Content from #{src['rss_url']} does not look like RSS/XML. First 200 chars: #{snippet.inspect}"
+        return
+      end
+
+      begin
+        feed = Feedjira.parse(xml)
+      rescue Feedjira::NoParserAvailable => e
+        puts "Warning: Feedjira couldn't parse feed for #{src['name']} (#{src['rss_url']}): #{e.message}"
+        return
+      rescue StandardError => e
+        puts "Warning: Error parsing feed for #{src['name']} (#{src['rss_url']}): #{e.class}: #{e.message}"
+        return
+      end
+
+      if feed && feed.respond_to?(:entries) && !feed.entries.empty?
+        process_entries(site, src, feed.entries)
+      else
+        puts "Warning: No entries found in feed for #{src['name']} (#{src['rss_url']})"
+      end
     end
 
     def process_entries(site, src, entries)
@@ -43,13 +85,17 @@ module ExternalPosts
 
     def create_document(site, source_name, url, content)
       # check if title is composed only of whitespace or foreign characters
-      if content[:title].gsub(/[^\w]/, '').strip.empty?
+      if content[:title].gsub(/[^
+   a-zA-Z0-9 ]/, '').strip.empty?
         # use the source name and last url segment as fallback
-        slug = "#{source_name.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')}-#{url.split('/').last}"
+        slug = "#{source_name.downcase.strip.gsub(' ', '-').gsub(/[^
+   a-zA-Z0-9-]/, '')}-#{url.split('/').last}"
       else
         # parse title from the post or use the source name and last url segment as fallback
-        slug = content[:title].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-        slug = "#{source_name.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')}-#{url.split('/').last}" if slug.empty?
+        slug = content[:title].downcase.strip.gsub(' ', '-').gsub(/[^
+   a-zA-Z0-9-]/, '')
+        slug = "#{source_name.downcase.strip.gsub(' ', '-').gsub(/[^
+   a-zA-Z0-9-]/, '')}-#{url.split('/').last}" if slug.empty?
       end
 
       path = site.in_source_dir("_posts/#{slug}.md")
