@@ -1,0 +1,9 @@
+.navbar-nav > li > a, .navbar-brand {
+  text-transform: capitalize;
+}
+.navbar-nav > li > a[href*="/cv/"] {
+  text-transform: uppercase;
+}
+h2, h3 {
+  text-transform: capitalize;
+}
