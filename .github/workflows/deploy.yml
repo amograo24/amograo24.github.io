@@ -101,11 +101,12 @@ jobs:
           ruby --version
           gem --version
           bundle --version
-          bundle env || true
+          bundle env || true  # for diagnostics only, don't fail if bundle env fails
 
           export JEKYLL_ENV=production
 
           # ensure gems are installed in CI before running jekyll
+          # explicit install needed despite bundler-cache to guarantee gems are present
           bundle install --jobs 4 --retry 3
 
           # build with trace for easier debugging on failure
