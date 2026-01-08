@@ -2,7 +2,8 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+# subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Undergraduate Student, <a href='www.plaksha.edu.in'>Plaksha University</a>
 
 profile:
   align: right
@@ -26,5 +27,5 @@ announcements:
 #   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
 #   limit: 3 # leave blank to include all the blog posts
 ---
-
+Currently: Visiting Student Researcher at MBZUAI Computer Vision Department, Abu Dhabi
 My website is still being developed right now. This page will be updated soon!
