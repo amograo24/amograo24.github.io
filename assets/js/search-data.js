@@ -391,10 +391,7 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-our-paper-on-bone-suppression-of-cxrs-for-pneumothorax-segmentation-has-been-accepted-at-isbi-2026-4-page-paper-main-track",
-          title: 'Our paper on bone suppression of CXRs for pneumothorax segmentation has been accepted...',
-          description: "",
-          section: "News",},{id: "news-i-am-excited-to-share-that-i-have-joined-wadhwani-ai-as-a-machine-learning-intern-i-would-be-working-in-the-spoken-english-assessment-and-proficiency-seap-project-under-the-meta-llama-impact-grant-looking-froward-to-contributing-to-ai-for-social-impact-and-learning-from-an-incredible-team",
+            },},{id: "news-i-am-excited-to-share-that-i-have-joined-wadhwani-ai-as-a-machine-learning-intern-i-would-be-working-in-the-spoken-english-assessment-and-proficiency-seap-project-under-the-meta-llama-impact-grant-looking-froward-to-contributing-to-ai-for-social-impact-and-learning-from-an-incredible-team",
           title: 'I am excited to share that I have joined Wadhwani AI as a...',
           description: "",
           section: "News",},{id: "news-my-first-research-paper-has-been-accepted-miccai-2025-main-track",
@@ -405,6 +402,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-happy-to-share-that-i-have-joined-mohamed-bin-zayed-university-of-artificial-intelligence-mbzuai-as-a-visiting-student-researcher-in-the-computer-vision-department",
           title: 'Happy to share that I have joined Mohamed Bin Zayed University of Artificial...',
+          description: "",
+          section: "News",},{id: "news-our-paper-on-bone-suppression-of-cxrs-for-pneumothorax-segmentation-has-been-accepted-at-isbi-2026-4-page-paper-main-track",
+          title: 'Our paper on bone suppression of CXRs for pneumothorax segmentation has been accepted...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
