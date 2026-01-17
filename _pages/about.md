@@ -31,7 +31,7 @@ Currently: Visiting Student Researcher at MBZUAI Computer Vision Department, Abu
 
 My website is still being developed right now. This page will be updated soon!
 
----
+<!-- ---
 
 ### Experiences
 
@@ -49,4 +49,4 @@ My website is still being developed right now. This page will be updated soon!
   </div>
 
   <!-- Add more logos here -->
-</div>
+</div> -->
