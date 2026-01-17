@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 # subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-subtitle: Undergraduate Student, <a href='www.plaksha.edu.in'>Plaksha University</a>
+subtitle: Visiting Researcher, <a href='https://mbzuai.ac.ae/'>MBZUAI</a>; Undergraduate Student, <a href='www.plaksha.edu.in'>Plaksha University</a>
 
 profile:
   align: right
