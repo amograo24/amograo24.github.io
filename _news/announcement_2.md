@@ -5,8 +5,7 @@ inline: true
 related_posts: false
 ---
 
-My first research paper has been accepted MICCAI'25 (main track) 🇰🇷!
-
+My first research paper has been accepted [MICCAI 2025](https://conferences.miccai.org/2025/en/) (main track) 🇰🇷! 
 
 <!-- ---
 layout: post

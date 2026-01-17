@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2025-01-13
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Our paper on bone suppression of CXRs for pneumothorax segmentation has been accepted at [ISBI 2026](https://biomedicalimaging.org/2026/) (4 page paper; main track) 🇬🇧! 
