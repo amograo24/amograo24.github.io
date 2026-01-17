@@ -30,3 +30,23 @@ announcements:
 Currently: Visiting Student Researcher at MBZUAI Computer Vision Department, Abu Dhabi.
 
 My website is still being developed right now. This page will be updated soon!
+
+---
+
+### Experiences
+
+<div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+  <!-- MBZUAI Logo -->
+  <div style="text-align: center;">
+    <img src="/assets/img/mbzuai_logo.png" alt="MBZUAI Logo" style="width: 100px; height: auto;">
+    <p>MBZUAI (Dec'25 - Present)</p>
+  </div>
+
+  <!-- Plaksha University Logo -->
+  <div style="text-align: center;">
+    <img src="/assets/img/hms_logo.png" alt="HMS Logo" style="width: 100px; height: auto;">
+    <p>Harvard Medical School</p>
+  </div>
+
+  <!-- Add more logos here -->
+</div>
