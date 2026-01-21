@@ -403,7 +403,7 @@ ninja.data = [{
           section: "News",},{id: "news-happy-to-share-that-i-have-joined-mohamed-bin-zayed-university-of-artificial-intelligence-mbzuai-as-a-visiting-student-researcher-in-the-computer-vision-department",
           title: 'Happy to share that I have joined Mohamed Bin Zayed University of Artificial...',
           description: "",
-          section: "News",},{id: "news-our-paper-on-bone-suppression-of-cxrs-for-pneumothorax-segmentation-has-been-accepted-at-ieee-isbi-2026-4-page-paper-main-track",
+          section: "News",},{id: "news-our-paper-on-bone-suppression-of-cxrs-for-pneumothorax-segmentation-has-been-accepted-at-ieee-isbi-2026-main-track",
           title: 'Our paper on bone suppression of CXRs for pneumothorax segmentation has been accepted...',
           description: "",
           section: "News",},{id: "projects-project-1",
