@@ -35,7 +35,7 @@ My website is still being developed right now. This page will be updated soon!
 
 ### Past Experiences/Affiliations
 
-- Undergraduate Researcher Collaboration with i3 Lab, Harvard Medical School
+- Undergraduate Research Collaboration with i3 Lab, Harvard Medical School
 - Machine Learning Intern at Wadhwani AI
 - Undergraduate Summer Research Intern at IISc Sustainable Transportation (IST) Lab, Indian Institute of Science
 
