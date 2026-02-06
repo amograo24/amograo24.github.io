@@ -34,6 +34,7 @@ Previously, I conducted research with [Prof. Yangming Ou](https://scholar.google
 I completing my B.Tech in Computer Science & Artificial Intelligence from [Plaksha University](https://plaksha.edu.in/).
 
 My website is being developed right now. This page will be updated soon!
+
 ---
 
 ### Past Experiences/Affiliations
