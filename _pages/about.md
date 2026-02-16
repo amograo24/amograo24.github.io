@@ -31,7 +31,7 @@ Hi! I am currently a Visiting Student Researcher at [MBZUAI](https://mbzuai.ac.a
 
 Previously, I conducted research with [Prof. Yangming Ou](https://scholar.google.com/citations?user=jC42cQwAAAAJ&hl=en) and [Dr. Rina Bao](https://scholar.google.com/citations?user=iDbLKFMAAAAJ&hl=en) from Harvard Medical School on neonatal brain MRI and medical image segmentation. Under the Meta Llama Impact Grant, I contributed to AI for social impact as a Machine Learning Intern at [Wadhwani AI](https://www.wadhwaniai.org/), working on systems to improve English pronunciation proficiency. I also spent at summer at the [IISc Sustainable Transportation Lab](https://civil.iisc.ac.in/~ashishv/beta/index.php) and have worked on geospatial computer vision at the [Geo AI lab](https://anupamsobti.github.io/).
 
-I completing my B.Tech in Computer Science & Artificial Intelligence from [Plaksha University](https://plaksha.edu.in/).
+I am completing my B.Tech in Computer Science & Artificial Intelligence from [Plaksha University](https://plaksha.edu.in/).
 
 My website is being developed right now. This page will be updated soon!
 
