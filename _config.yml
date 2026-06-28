@@ -9,9 +9,9 @@ last_name: Rao
 contact_note: >
   Open to collaboration! The best way to reach me is via the above email or LinkedIn.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Amog Rao: Undergraduate AI Researcher interested at the intersection of multi-modal learning and medical imaging.
+  Amog Rao is an undergraduate AI researcher working on multimodal learning, computer vision, world models, medical imaging, and deployable healthcare AI.
 footer_text: >
-keywords: Amog, Rao, Amog-Rao, medical, research, Plaksha, MBZUAI, Harvard, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: Amog Rao, Amog, Rao, Amog-Rao, amograo, amograo24, Amog Rao researcher, Amog Rao AI, Amog Rao Plaksha, Amog Rao MBZUAI, Amog Rao Harvard, undergraduate AI researcher, AI researcher, machine learning researcher, artificial intelligence researcher, computer vision researcher, multimodal learning, multi-modal learning, world models, medical imaging, medical AI, healthcare AI, deployable AI systems, neonatal brain MRI, medical image segmentation, Plaksha University, MBZUAI, Mohamed bin Zayed University of Artificial Intelligence, Harvard Medical School, Wadhwani AI, IISc, Geo AI, academic website, personal website, portfolio website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -60,9 +60,9 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: /assets/img/prof_pic2.png # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -176,6 +176,7 @@ exclude:
   - Dockerfile
   - docker-compose.yml
   - docker-compose-slim.yml
+  - env_website/
   - FAQ.md
   - Gemfile
   - Gemfile.lock
