@@ -40,27 +40,6 @@ My website is being developed right now. This page will be updated soon!
 
 ---
 
-### Past Experiences/Affiliations
+### Experience
 
-- Undergraduate Research Collaboration with i3 Lab, Harvard Medical School
-- Machine Learning Intern at Wadhwani AI
-- Undergraduate Summer Research Intern at IISc Sustainable Transportation (IST) Lab, Indian Institute of Science
-
-<!-- ---
-
-### Experiences
-
-<div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
-
-  <!-- <div style="text-align: center;">
-    <img src="/assets/img/mbzuai_logo.png" alt="MBZUAI Logo" style="width: 100px; height: auto;">
-    <p>MBZUAI (Dec'25 - Present)</p>
-  </div>
-
-  <div style="text-align: center;">
-    <img src="/assets/img/hms_logo.png" alt="HMS Logo" style="width: 100px; height: auto;">
-    <p>Harvard Medical School</p>
-  </div>
-
-  <!-- Add more logos here -->
-<!-- </div> -->
+See my full experience timeline [here](/experience/).
