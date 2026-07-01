@@ -6,7 +6,7 @@ description: Amog Rao is an undergraduate AI researcher working on multimodal le
 keywords: Amog Rao, Amog Rao AI researcher, Amog Rao Plaksha, Amog Rao MBZUAI, Amog Rao Harvard, undergraduate AI researcher, multimodal learning, computer vision, world models, medical AI, healthcare AI, medical imaging, Plaksha University, MBZUAI, Harvard Medical School, Wadhwani AI
 og_image: /assets/img/prof_pic2.png
 # subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-subtitle: Visiting Researcher, <a href='https://mbzuai.ac.ae/'>MBZUAI</a>; Undergraduate Student, <a href='www.plaksha.edu.in'>Plaksha University</a>
+subtitle: Visiting Researcher, <a href='https://mbzuai.ac.ae/'>MBZUAI</a>; Undergraduate Student, <a href='https://plaksha.edu.in'>Plaksha University</a>
 
 profile:
   align: right
